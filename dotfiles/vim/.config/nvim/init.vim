@@ -9,6 +9,8 @@ set number
 set relativenumber
 set ignorecase
 
+set clipboard+=unnamedplus
+
 set t_Co=256
 set background=dark
 colorscheme hipthem
@@ -32,7 +34,8 @@ set softtabstop=2
 autocmd FileType c setlocal ts=8 sw=8 expandtab
 
 " copy
-map <C-c> "*y
+map <C-c> "+y
+map <C-p> "+p
 
 set autoindent
 
