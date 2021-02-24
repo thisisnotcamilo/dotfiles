@@ -22,5 +22,7 @@ alias ll="ls -al --color=auto"
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
 
-# bin path
-PATH=$PATH:$HOME/.bin
+PATH=$PATH:$HOME/.bin:$HOME/.local/bin
+
+# Ansible host key checking for Mikrotik SSH connection
+export ANSIBLE_HOST_KEY_CHECKING=False
