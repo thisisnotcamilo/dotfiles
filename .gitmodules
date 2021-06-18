@@ -1,3 +1,6 @@
 [submodule "dotfiles/vim/.config/nvim/bundle/ctrlp.vim"]
 	path = dotfiles/vim/.config/nvim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim
+[submodule "dotfiles/vim/.config/nvim/bundle/nerdtree"]
+	path = dotfiles/vim/.config/nvim/bundle/nerdtree
+	url = https://github.com/preservim/nerdtree
