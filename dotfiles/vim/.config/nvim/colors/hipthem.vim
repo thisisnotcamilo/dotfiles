@@ -53,7 +53,7 @@ hi Visual		cterm=reverse ctermbg=black						guibg=grey40
 hi VisualNOS	cterm=underline,bold							gui=underline,bold
 hi DiffText		cterm=bold ctermbg=red							gui=bold guibg=red
 hi Directory	ctermfg=lightcyan								guifg=cyan
-hi LineNr		ctermfg=32 ctermbg=NONE							guifg=steelblue guibg=grey20
+hi LineNr		ctermfg=darkgrey ctermbg=NONE							guifg=steelblue guibg=grey20
 hi MoreMsg		ctermfg=82										gui=bold guifg=#60ff60
 hi NonText		ctermfg=black ctermbg=NONE   					gui=bold guifg=lightblue guibg=grey10
 hi Question		ctermfg=82										gui=bold guifg=#60ff60
@@ -95,7 +95,7 @@ if &t_Co < 17
   hi NonText		ctermbg=black
   hi CursorLine		cterm=reverse ctermbg=none
   hi CursorColumn	cterm=reverse ctermbg=black
-  hi LineNr			ctermfg=blue ctermbg=black
+  hi LineNr			ctermfg=darkgrey ctermbg=black
   hi StatusLine		cterm=bold ctermbg=black
   hi Type			ctermfg=green
   hi MoreMsg		ctermfg=lightgreen

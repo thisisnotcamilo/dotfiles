@@ -14,6 +14,7 @@ set clipboard+=unnamedplus
 set t_Co=256
 set background=dark
 colorscheme hipthem
+
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 
@@ -22,22 +23,23 @@ syntax on
 filetype plugin on
 let g:go_disable_autoinstall = 0
 
-" identation vertical helper
-let g:indentLine_char = '⦙'
-
 " tabs to spaces
 set expandtab
-set shiftwidth=2
-set softtabstop=2
-
-" tabs per filetype
-autocmd FileType c setlocal ts=8 sw=8 expandtab
-
-" copy
-map <C-c> "+y
-map <C-p> "+p
+set shiftwidth=4
+set softtabstop=4
 
 set autoindent
+
+" tabs per filetype
+autocmd FileType c setlocal ts=4 sw=4 expandtab
+autocmd FileType cpp setlocal ts=4 sw=4 expandtab
+
+" copy
+noremap <silent> <C-c> "+y
+noremap <silent> <C-p> "+p
+
+" save
+noremap <silent> <C-s> :w!<CR>
 
 " highlight
 let g:go_highlight_functions = 1  
@@ -46,12 +48,20 @@ let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1  
 let g:go_highlight_build_constraints = 1  
 
+" domain specific shortcuts
+
+" Puzzle Game compile
+noremap <C-F5> :w! <bar> !cmd.exe /c "D:\Code\PuzzleGame\code\build.bat"<CR>
+
 " scrolling
 set scrolloff=10
 set sidescrolloff=15
 set sidescroll=1
 
-" plugins
+" plugins related
 
-" NERDTree shortcut
-map <C-n> :NERDTreeToggle<CR>
+" NERDTree
+noremap <C-n> :NERDTreeToggle<CR>
+
+" fzf
+" noremap <C-p> :FZF<CR>

@@ -1,7 +1,7 @@
 set -o vi
 
 export PS1="\u \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;253m\]\w\[$(tput sgr0)\] \\$ \[$(tput sgr0)\]"
-export TERM=xterm-color
+export TERM=xterm-256color
 export EDITOR="nvim"
 export SVN_EDITOR="nvim"
 export CLICOLOR=1
@@ -22,7 +22,8 @@ alias ll="ls -al --color=auto"
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
 
+# path
 PATH=$PATH:$HOME/.bin:$HOME/.local/bin
 
-# Ansible host key checking for Mikrotik SSH connection
+# ansible host key checking for Mikrotik SSH connection
 export ANSIBLE_HOST_KEY_CHECKING=False
